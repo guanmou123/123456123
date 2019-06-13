@@ -3,31 +3,31 @@ var video = $(".catalogue_ul1 li[id*=video-]");
 var i = 1;
 var v = 1;
 video.css("color", "blue");
-console.log("ÒÑÑ¡È¡" + video.length + "¸öĞ¡½Ú,²¢ÒÑÓÃÀ¶É«±êÃ÷,Çë¼ì²éÊÇ·ñÓĞÒÅÂ©,ÈçÓĞÒÅÂ©,¸Å²»¸ºÔğ");
+console.log("å·²é€‰å–" + video.length + "ä¸ªå°èŠ‚,å¹¶å·²ç”¨è“è‰²æ ‡æ˜,è¯·æ£€æŸ¥æ˜¯å¦æœ‰é—æ¼,å¦‚æœ‰é—æ¼,æ¦‚ä¸è´Ÿè´£");
 setTimeout(function () {
     $('.speedTab15').click();
     $('.volumeIcon').click();
-    console.log("ÒÑ½øĞĞ¾²ÒôºÍ1.5±¶¼ÓËÙ");
+    console.log("å·²è¿›è¡Œé™éŸ³å’Œ1.5å€åŠ é€Ÿ");
 }, 3000);
 ti.on("DOMNodeInserted", function (e) {
-    if (e.target.textContent == "¹Ø±Õ") {
-        console.log("¼ì²âµ½µÚ" + i + "¸öµ¯Ìâ´°¿Ú");
+    if (e.target.textContent == "å…³é—­") {
+        console.log("æ£€æµ‹åˆ°ç¬¬" + i + "ä¸ªå¼¹é¢˜çª—å£");
         window.setTimeout(function () {
             document.getElementById("tmDialog_iframe").contentWindow.document.getElementsByClassName("answerOption")[0].getElementsByTagName("input")[0].click();
             $(".popbtn_cancel").click();
-            console.log("ÒÑ¹Ø±Õ");
+            console.log("å·²å…³é—­");
         }, 3000);
         i++;
-    } else if (e.target.textContent == "±¾½ÚÊÓÆµ,ÀÛ¼Æ¹Û¿´Ê±¼ä¡º100%¡»") {
-        console.log("¼ì²âµ½ÊÓÆµ¹Û¿´Íê³É£¬×¼±¸Ìøµ½ÏÂÒ»½Ú");
+    } else if (e.target.textContent == "æœ¬èŠ‚è§†é¢‘,ç´¯è®¡è§‚çœ‹æ—¶é—´ã€100%ã€") {
+        console.log("æ£€æµ‹åˆ°è§†é¢‘è§‚çœ‹å®Œæˆï¼Œå‡†å¤‡è·³åˆ°ä¸‹ä¸€èŠ‚");
         $('.next_lesson_bg').find('a').trigger('click');
-        console.log("ÒÑÌø×ª");
+        console.log("å·²è·³è½¬");
         setTimeout(function () {
             $('.volumeIcon').click();
             $('.speedTab15').click();
-            console.log("ÒÑ½øĞĞ¾²ÒôºÍ1.5±¶¼ÓËÙ");
+            console.log("å·²è¿›è¡Œé™éŸ³å’Œ1.5å€åŠ é€Ÿ");
         }, 6000);
         v++;
-        console.log("Ä¿Ç°²¥·ÅÁË" + v + "¸öÊÓÆµ");
+        console.log("ç›®å‰æ’­æ”¾äº†" + v + "ä¸ªè§†é¢‘");
     }
-});
+});********
